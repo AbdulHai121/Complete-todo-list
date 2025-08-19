@@ -1,27 +1,13 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+node_modules
+.env
+dist
 
-# dependencies
-/node_modules
+---
 
-# next.js
-/.next/
-/out/
+# Notes
+- This backend focuses on clarity and ready-to-run completeness. It is intentionally minimal (no refresh tokens, no role system) but production-ready patterns are used: Prisma, bcrypt, JWT, helmet, rate-limit, nodemailer.
+- After you run migrations, create an email app password or use a testing mail trap for `EMAIL_USER`/`EMAIL_PASS`.
 
-# production
-/build
+---
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# End of bundled project
